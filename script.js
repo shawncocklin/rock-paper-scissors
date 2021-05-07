@@ -42,9 +42,9 @@ function playRound(playerSelection, computerSelection) {
   
 }
 
-function game() {
+function game(numberOfRounds) {
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < numberOfRounds; i++) {
     const computerSelection = computerPlay();
     let playerSelection = prompt("Rock-paper-scissors?");
     console.log(playRound(playerSelection, computerSelection))
@@ -62,6 +62,6 @@ function game() {
   
 }
 
-game();
+game(5);
 
 
